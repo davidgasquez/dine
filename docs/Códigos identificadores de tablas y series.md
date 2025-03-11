@@ -1,10 +1,10 @@
-API JSON / API JSON
+API JSON / Códigos identificadores de tablas y series
 ===============
                                              
 
 [![Image 1: SIGLAS Instituto Nacional de Estadística](https://www.ine.es/menus/_b/img/LogoINE.svg)](https://www.ine.es/)
 
-*   [English](https://www.ine.es/dyngs/DAB/en/index.htm?cid=1099 "English Page")
+*   [English](https://www.ine.es/dyngs/DAB/en/index.htm?cid=1104 "English Page")
 
    
 
@@ -13,16 +13,16 @@ API JSON / API JSON
 *   [Censo Electoral](https://www.ine.es/dyngs/CEL/index.htm?cid=41)
 *   [Sede electrónica](https://sede.ine.gob.es/ss/Satellite?c=Page&cid=1254734719723&pagename=SedeElectronica%2FSELayout&lang=es_ES)
 *   [Compartir](javascript:void(0))
-    *   [X](https://www.ine.es/dyngs/DAB/index.htm?cid=1099#shareTwitter "Abre ventana nueva X")
-    *   [Facebook](https://www.ine.es/dyngs/DAB/index.htm?cid=1099#shareFacebook "Abre ventana nueva Facebook")
-    *   [Linkedin](https://www.ine.es/dyngs/DAB/index.htm?cid=1099#shareLinkedin "Abre ventana nueva Linkedin")
-    *   [WhatsApp](https://www.ine.es/dyngs/DAB/index.htm?cid=1099#shareWhatsapp "Abre ventana nueva WhatsApp")
-    *   [Correo Electrónico](https://www.ine.es/dyngs/DAB/index.htm?cid=1099#shareMail "Abre ventana nueva")
-    *   [Copiar al portapapeles](https://www.ine.es/dyngs/DAB/index.htm?cid=1099#shareClipboard "Abre ventana nueva")
+    *   [X](https://www.ine.es/dyngs/DAB/index.htm?cid=1104#shareTwitter "Abre ventana nueva X")
+    *   [Facebook](https://www.ine.es/dyngs/DAB/index.htm?cid=1104#shareFacebook "Abre ventana nueva Facebook")
+    *   [Linkedin](https://www.ine.es/dyngs/DAB/index.htm?cid=1104#shareLinkedin "Abre ventana nueva Linkedin")
+    *   [WhatsApp](https://www.ine.es/dyngs/DAB/index.htm?cid=1104#shareWhatsapp "Abre ventana nueva WhatsApp")
+    *   [Correo Electrónico](https://www.ine.es/dyngs/DAB/index.htm?cid=1104#shareMail "Abre ventana nueva")
+    *   [Copiar al portapapeles](https://www.ine.es/dyngs/DAB/index.htm?cid=1104#shareClipboard "Abre ventana nueva")
 
 *   [API JSON](https://www.ine.es/dyngs/DAB/index.htm?cid=1099)
-*   API JSON
-    ========
+*   Códigos identificadores de tablas y series
+    ==========================================
     
 
 *   [API JSON](https://www.ine.es/dyngs/DAB/index.htm?cid=1099)
@@ -35,33 +35,47 @@ API JSON / API JSON
 *   [Generador de URLs](https://www.ine.es/dyngs/DAB/index.htm?cid=1347)
 *   [Generador de gráficos](https://www.ine.es/dyngs/DAB/index.htm?cid=1348)
 
-API JSON
---------
+Códigos identificadores de tablas y series  
+  
+Obtención del identificador de una tabla utilizando INEbase
+-----------------------------------------------------------------------------------------------------------
 
-**Servicio web para la consulta de INEbase con salida en formato JSON**
+Navegando a través de INEbase, se acceden a las tablas estadísticas. Se distinguen los identificadores en base a la fuente de procedencia de las mismas.
 
-El servicio API JSON INE (Java Script Object Notation) que se describe en esta sección permite acceder mediante peticiones URL a toda la información disponible en INEbase, sistema que utiliza el Instituto Nacional de Estadística (INE) para la publicación de la información estadística.
+*   Tablas Tempus3
+    *   *   **Tabla**: Índices nacionales: general y de grupos ECOICOP
+        *   **Enlace**: [https://www.ine.es/jaxiT3/Tabla.htm?t=50902](https://www.ine.es/jaxiT3/Tabla.htm?t=50902)
+        *   **Identificador**: el parámetro t de la URL: 50902
+        
+        ![Image 3: indices_nacionales](https://www.ine.es/GS_FILES/indices_nacionales.png)
+        
+*   Tablas PC-Axis
+    *   *   **Tabla**: Población por edad (3 grupos de edad), Españoles/Extranjeros, Sexo y Año
+        *   **Enlace**: [https://www.ine.es/jaxi/Tabla.htm?path=/t20/e245/p08/l0/&file=01001.px](https://www.ine.es/jaxi/Tabla.htm?path=/t20/e245/p08/l0/&file=01001.px)
+        *   **Identificador**: concatenación de los parámetros path (t20/e245/p08/l0/) y file (01001.px) resultando t20/e245/p08/l0/01001.px
+        
+        ![Image 4: poblacion_edad](https://www.ine.es/GS_FILES/poblacion_edad.png)
+        
+*   Tablas tpx
+    *   *   **Tabla**: Extracción nacional por tipo de material y años
+        *   **Enlace**: [https://www.ine.es/jaxi/Tabla.htm?tpx=33387&L=0](https://www.ine.es/jaxi/Tabla.htm?tpx=33387&L=0)
+        *   **Identificador**: el parámetro tpx de la URL: 33387
+        
+        ![Image 5: extraccion_nacional](https://www.ine.es/GS_FILES/extraccion_nacional.png)
+        
 
-La estructura de las peticiones a través de URL y la simplicidad del formato JSON permiten la explotación automática de la información estadística.
+Obtención del identificador de una serie utilizando INEbase (sólo Tempus3)
+--------------------------------------------------------------------------
 
-INEbase es el sistema que utiliza el INE para la publicación de la información estadística. La información que será accesible a través del servicio API JSON del INE proviene de tres fuentes distintas:
+Sólo se dispone de identificadores de series para aquella información cuya fuente de datos es Tempus3. Por tanto, lo que a continuación se cuenta sólo es aplicable a las tablas de Tempus3.
 
-*   Base de datos [Tempus3](https://www.ine.es/dyngs/INE/index.htm?cid=1105).
-*   Repositorio de archivos [PC-Axis](https://www.ine.es/ss/Satellite?L=es_ES&c=Page&cid=1254735116596&p=1254735116596&pagename=ProductosYServicios%2FPYSLayout).
-*   Repositorio de archivos tpx.
+El identificador de una serie de Tempus3 se obtiene a través de las tablas de INEbase:
 
-Para saber si una tabla estadística está almacenada en Tempus3, en el repositorio de archivos PC-Axis o en el repositorio de archivos tpx, consultar [Códigos identificadores de tablas y series](https://www.ine.es/dyngs/DAB/index.htm?cid=1104).
+*   **Serie**: serie correspondiente a la variación anual del Índice de Precios de Consumo general.
+*   **Tabla**: Navegar a la tabla que contiene la serie en la que se tiene interés: ” Índices nacionales: general y de grupos ECOICOP”
+*   **Enlace de la tabla**: [https://www.ine.es/jaxiT3/Datos.htm?t=50902](https://www.ine.es/jaxiT3/Datos.htm?t=50902)
 
-Toda la información publicada por el INE, independientemente de la fuente, va a poder ser consultada a través de la API JSON.
-
-Paquete de R
-------------
-
-Se dispone del [paquete INEapir](https://github.com/es-ine/ineapir) para interactuar con la API JSON.
-
-Para facilitar el acceso a la información que la API JSON proporciona se ha desarrollado un paquete de R que pone a disposición de los usuarios un conjunto de funciones para obtener datos y metadatos a través de llamadas a la propia API. El paquete INEapir incorpora todas las funcionalidades de ésta última y permite realizar las mismas consultas, desde las más generales a las más precisas, utilizando también los parámetros opcionales, pero con la ventaja de obtener la información directamente en los desarrollos realizados en R. Además, el paquete dispone de una página web con documentación y ejemplos de uso.
-
-[![Image 3: INEapir](https://www.ine.es/GS_FILES/hex_logo_INEapir.png)](https://github.com/es-ine/ineapir)     [![Image 4: Cheatsheet](https://www.ine.es/GS_FILES/ineapir_thumbnail_p.png)](https://raw.githubusercontent.com/es-ine/ineapir/main/man/figures/ineapir.pdf)
+![Image 6: tabla_indices](https://www.ine.es/GS_FILES/tabla_indices.png)
 
 *   [**Contacto**](https://www.ine.es/infoine/)
 *   [Mapa web](https://www.ine.es/indiceweb.htm)
