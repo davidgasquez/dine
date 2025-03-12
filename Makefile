@@ -8,6 +8,7 @@
 install: .uv
 	uv sync --frozen --all-groups
 
+.PHONY: docs
 docs:
 	@./scripts/scrape-ine-docs.sh
 

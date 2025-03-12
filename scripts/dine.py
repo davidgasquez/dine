@@ -8,15 +8,16 @@
 # ///
 
 import argparse
-import sys
 import asyncio
-from pathlib import Path
 import json
-import polars as pl
-from io import StringIO
-from tqdm import tqdm
-import httpx
+import sys
 import textwrap
+from io import StringIO
+from pathlib import Path
+
+import httpx
+import polars as pl
+from tqdm import tqdm
 
 BASE_URL = "https://servicios.ine.es"
 CSV_URL = "https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/{table_id}.csv"
@@ -233,9 +234,6 @@ def main():
         add_help=False,  # Disable default help to use our custom help
     )
     subparsers = parser.add_subparsers(dest="command")
-
-    # Help command
-    help_parser = subparsers.add_parser("help", help="Show detailed help information")
 
     # Info command
     info_parser = subparsers.add_parser(
