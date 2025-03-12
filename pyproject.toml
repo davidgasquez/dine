@@ -1,7 +1,7 @@
 [project]
 name = "dine"
-version = "0.0.1"
-description = "Exportando datos del Instituto Nacional de Estadística de España"
+version = "0.0.2"
+description = "Librería y línea de comandos para explorar y exportar datos del Instituto Nacional de Estadística de España"
 readme = "README.md"
 authors = [{ name = "David Gasquez", email = "davidgasquez@gmail.com" }]
 requires-python = ">=3.13.2"

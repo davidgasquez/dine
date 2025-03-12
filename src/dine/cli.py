@@ -7,7 +7,7 @@ import dine
 
 app = typer.Typer(
     name="dine",
-    help="Exportando datos del Instituto Nacional de Estadística de España",
+    help="Librería y línea de comandos para explorar y exportar datos del Instituto Nacional de Estadística.",
     add_completion=False,
 )
 

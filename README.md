@@ -1,6 +1,6 @@
 # DINE 🦕
 
-Exportando datos del [Instituto Nacional de Estadística](https://www.ine.es/) a Parquet, haciendolas más fácilmente accesibles y manejables.
+Librería y línea de comandos para explorar y exportar datos del [Instituto Nacional de Estadística](https://www.ine.es/).
 
 ## 🔍 Recursos
 
@@ -9,6 +9,8 @@ Exportando datos del [Instituto Nacional de Estadística](https://www.ine.es/) a
 - [Microdatos INE](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176918&menu=resultados&idp=1254735976595) - Acceso a microdatos de encuestas
 - [API INE](https://www.ine.es/dyngs/DataLab/es/manual.html?cid=1259945948443) - Documentación de la API
 - [Tempus3](https://www.ine.es/dyngs/IOE/es/operacion.htm?numinv=30714) - Sistema de difusión de información estadística
+
+Puedes explorar la documentación de la API en Markdown en la carpeta [docs](docs).
 
 ## 🚀 Instalación
 
@@ -22,7 +24,7 @@ pip install dine
 uv add dine
 ```
 
-Si solo quieres usar la línea de comandos, puedes instalar `dine` globalmente con:
+Para instalar `dine` en el sistema de manera aislada, puedes hacerlo con:
 
 ```bash
 uv tool install dine
