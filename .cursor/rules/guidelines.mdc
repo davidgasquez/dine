@@ -7,6 +7,6 @@ alwaysApply: true
 
 - Use `uv` and avoid calling `python` or `pip` directly. Check help with `uv --help` if needed.
 - Use `polars` and `httpx` instead of `pandas` and `requests`.
-- Write any documentation in Spanish.
 - Keep things Pythonic.
 - Run the code and verify it works as expected.
+- Docs are available at the `docs` folder. Check them.
