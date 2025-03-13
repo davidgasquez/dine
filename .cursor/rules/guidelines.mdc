@@ -9,4 +9,3 @@ alwaysApply: true
 - Use `polars` and `httpx` instead of `pandas` and `requests`.
 - Keep things Pythonic.
 - Run the code and verify it works as expected.
-- Docs are available at the `docs` folder. Check them.

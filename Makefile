@@ -7,12 +7,3 @@
 .PHONY: install
 install: .uv
 	uv sync --frozen --all-groups
-
-.PHONY: docs
-docs:
-	@./scripts/scrape-ine-docs.sh
-
-.PHONY: clean
-clean:
-	rm -rf dataset
-	rm -rf *.spec
