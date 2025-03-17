@@ -1,34 +1,32 @@
 # DINE 🦕
 
-Librería y línea de comandos para explorar y exportar datos del [Instituto Nacional de Estadística](https://www.ine.es/).
-
-## 🔍 Recursos
-
-- [API JSON](https://www.ine.es/dyngs/DAB/index.htm?cid=1099) - API JSON de INE
-- [Tablas INE](https://www.ine.es/dyngs/INEbase/listaoperaciones.htm) - Listado de operaciones estadísticas
-- [Microdatos INE](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176918&menu=resultados&idp=1254735976595) - Acceso a microdatos de encuestas
-- [API INE](https://www.ine.es/dyngs/DataLab/es/manual.html?cid=1259945948443) - Documentación de la API
-- [Tempus3](https://www.ine.es/dyngs/IOE/es/operacion.htm?numinv=30714) - Sistema de difusión de información estadística
-
-Puedes explorar la documentación de la API en Markdown en la carpeta [docs](docs).
+Pequeña librería y línea de comandos para explorar y exportar datos del [Instituto Nacional de Estadística](https://www.ine.es/).
 
 ## 🚀 Instalación
 
-Puedes instalar la librería `dine` usando `uv` o `pip`.
+Puedes instalar la librería `dine` usando `uv` (recomendado) o `pip`.
 
 ```bash
+# Usando uv
+uv pip install dine
+
+# Usando pip
 pip install dine
 ```
 
-```bash
-uv add dine
-```
-
-Para instalar `dine` en el sistema de manera aislada, puedes hacerlo con:
+Puedes tambien instalar `dine` en el sistema de manera aislada con:
 
 ```bash
 uv tool install dine
 ```
+
+O, alternativamente, ejecutar los comandos "sin instalación" usando  `uvx` (e.g: `uvx):
+
+```bash
+uvx dine --help
+```
+
+Es la forma más fácil de empezar a usar el proyecto!
 
 ## 🛠️ Uso
 
